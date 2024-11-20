@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+}
+
+article, div, footer, header, section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 435px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: verdana;
+    font-size: 13px;
+}
+
+header {
+    max-width: 419px;
+}
+
+footer {
+    max-width: 435px;
+    text-align: center;
+}
+
+span {
+    color:#464646;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.caption-1, .caption-2, .caption-3, .caption-4, .caption-5 {
+    opacity: 0;
+    text-align: justify;
+}
+
+
+
+
+
+img {
+    display: block;
+    width: 100%;
+    margin-bottom:-8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.logo {
+    margin-top: 150px;
+}
+
+img.angel {
+    margin-top: 70px;
+    max-width: 200px;
+}
+
+img.signature {
+    max-width: 125px;
+}
+
+img.transparent {
+    margin-top: 150px;
+    opacity: .05;
+}
+
+img.transparent:hover {
+    opacity: 1;
+}
+
+img.small {
+    max-width: 70px;
+    opacity: 1;
+}
+
+img.small:hover {
+    max-width: 70px;
+    opacity: 1;
+}
+
+img.shadow {
+    margin-top: 50px;
+    filter: drop-shadow(0px 0px 6px #000000);
+}
+
+img.shadow2 {
+    margin-top: 100px;
+    filter: drop-shadow(0px 0px 6px #000000);
+    z-index: 2;
+    opacity: 0;
+}
+
+img.shadow3 {
+    margin-top: 100px;
+    filter: drop-shadow(0px 0px 6px #000000);
+    z-index: 2;
+    opacity: 0;
+}
+
+img.transparent2 {
+    position: absolute;
+    top: 150px;
+    bottom:10px;
+    z-index: 1;
+    opacity: .5;
+}
+
+img.transparent3 {
+    position: absolute;
+    top: 150px;
+    bottom:10px;
+    z-index: 1;
+    opacity: .02;
+}
+
+
+audio {
+    max-width: 80px;
+    opacity: .01;
+    transition: opacity 2s;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+a:link {
+    color:#000099;
+}
+
+a:active {
+    color:#cd0000;
+}
+
+a:visited {
+    color:#464646;
+}
+
+a:visited:active {
+    color:#cd0000;
+}
+
+
+
+
+.hover:hover > #copyright {
+    opacity: .01;
+}
+
+.hover:hover > #quote {
+    opacity: .3;
+}
+
+.hover:hover > #signature {
+    opacity: 1;
+    color: black;
+}
+
+.hover:hover > #line {
+    opacity: .25;
+}
+
+
+
+#copyright {
+    opacity: .25;
+    transition-property: opacity;
+    transition-duration: 4s;
+}
+
+#quote {
+    opacity: .01;
+    transition-property: opacity;
+    transition-duration: 3s;
+    position: absolute;
+    bottom: 82px;
+}
+
+#signature {
+    opacity: .01;
+    color: white;
+    transition: opacity 1.5s, color 1s;
+    position: absolute;
+    left: 250px;
+    bottom: 10px;
+}
+
+#line {
+    opacity: .25;
+    transition-property: opacity;
+    transition-duration: 5s;
+}
+
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.shadow {
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.shadow2 {
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+}
+
+.shadow3 {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.caption-1 {
+    animation: fadeInAnimation linear 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.caption-2 {
+    animation: fadeInAnimation linear 1.25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.25s;
+}
+
+.caption-3 {
+    animation: fadeInAnimation linear .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+.caption-4 {
+    animation: fadeInAnimation linear 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+}
+
+.caption-5 {
+    animation: fadeInAnimation linear 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+
+
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.transparent2 {
+    animation: fadeOutAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+}
+
+
+
+
+@keyframes fadeOuttAnimation {
+    0% {
+        opacity: .02;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.transparent3 {
+    animation: fadeOuttAnimation linear .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
